@@ -12,8 +12,9 @@
 - Spend cost-effective money on testing (e.g., improve testability) 
 
 ## Terminology
-| Term | Description |
-| --- | ----------- |
+
+| Term  | Description |
+| ----------- | ----------- |
 | Software failure | A component or a software system behaves in a way that is not expected. |
 | Software defect (or bug or fault): | A flaw in a component or in any part of the software that causes the system to behave incorrectly. |
 | Error (or mistake): | It is about the human action that produces the incorrect result. |
