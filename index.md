@@ -58,6 +58,77 @@ A test case is a multipart artifact with a definite structure
 | Test script | A test case that is prepared in a form to be executed automatically on the tested software and produce a report |
 | Prefix values | A set of assumptions, concepts, and tools that support test automation |
 
+## Junit
+
+- Open source Java testing framework used to write and run repeatable automated tests JUnit is open source (junit.org)
+- A structure for writing test drivers
+- JUnit features include:
+  -  Assertions for testing expected results
+  -  Test features for sharing common test data
+  -  Test suites for easily organizing and running tests o Graphical and textual test runners
+- JUnit is widely used in industry
+- JUnit can be used as stand alone Java programs (from the command line) or within an IDE such as Visual Studio Code
+
+## Structure
+- JUnit can be used to test ... 
+  - an entire object
+  - parts of an object (a method or some interacting methods) 
+  - the interaction between several objects 
+- It is primarily intended for unit and integration testing, not system testing
+- Each test case is embedded into one test method
+- A test class contains one or more test methods 
+- Test classes include : 
+  - A collection of test methods
+  - Methods to set up the state before and update the state after each test and before and after all the tests 
+
+
+## Writing tests
+- Need to use the methods of the junit.framework.assert class 
+  - javadoc gives a complete description of its capabilities
+- Each test method checks a condition (assertion) and reports to the test runner whether the test failed or succeeded
+- The test runner uses the result to report to the user (in command line mode) or update the display (in an IDE)
+- All of the methods return void 
+- A few representative methods of junit.framework.assert: 
+  - assertTrue (boolean) 
+  - assertTrue (String, boolean) 
+  - fail (String) 
+
+## IV (Test fixture) 
+- A test fixture is the state of the test 
+  - Objects and variables that are used by more than one test 
+  - Initializations (prefix values)
+  - Reset values (postfix values) 
+- Different tests can use the objects without sharing the state Objects used in test fixtures are declared as instance variables 
+- They should be initialized in a @Before method [example: create list]
+- Can be deallocated or reset in an @After method [“Tim”, “Max”]
+
+## Data-Driven Tests 
+- Problem: Testing a function multiple times with similar values 
+  - How to avoid test code bloat? 
+- Simple example: Adding two numbers 
+  - adding a given pair of numbers is just like adding any other pair 
+  - You really only want to write one test 
+-	Data-driven unit tests call a constructor for each set of test values 
+  - Same tests are then run on each set of data values 
+  - Collection of data values defined by method tagged with @Parameters annotation 
+
+## Data-Driven Tests - Theories 
+- Unit tests can have actual parameters 
+  - So far, we’ve only seen parameterless test methods 
+
+- Contract model: Assume, Act, Assert 
+  - Assumptions (preconditions) limit values appropriately 
+  - Action performs activity under scrutiny
+  - Assertions (postconditions) check result 
+
+
+
+
+
+
+
+
+
 
 
 ```markdown
