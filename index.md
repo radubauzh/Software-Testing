@@ -43,6 +43,22 @@ Dominated by two problems
 | ----------- | ----------- |
 | How easy it is to provide a program with the needed inputs, in terms of values, operations, and behaviors. Input from hardware sensors or distributed software is harder to provide | How easy it is to observe the behavior of a program in terms of its outputs, effects on the environment and other hardware and software components Software that affects hardware devices, databases, or remote files have low observability |
 
+## Components of a Test Case
+A test case is a multipart artifact with a definite structure
+
+| Component | Description |
+| --- | ----------- |
+| Test case values | The input values needed to complete an execution of the software under test [“Tim”] |
+| Expected results | The result that will be produced by the test if the software behaves as expected (“Student”) |
+| Test oracle | It uses the expected results to decide whether a test passed or failed |
+| Prefix values | Input necessary to put the software into the state to receive the test case values |
+| Postfix values | Input need to be sent to the software after the test case values are sent |
+| Test case | The test case values, prefix values, postfix values, and expected results necessary for execution and evaluation |
+| Test set/suite | A set of test cases |
+| Test script | A test case that is prepared in a form to be executed automatically on the tested software and produce a report |
+| Prefix values | A set of assumptions, concepts, and tools that support test automation |
+
+
 
 ```markdown
 [Link](url) and ![Image](src)
