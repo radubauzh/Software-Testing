@@ -114,7 +114,6 @@ A test case is a multipart artifact with a definite structure
 
 ## Data-Driven Tests - Theories 
 - Unit tests can have actual parameters 
-  - So far, we’ve only seen parameterless test methods 
 
 - Contract model: Assume, Act, Assert 
   - Assumptions (preconditions) limit values appropriately 
