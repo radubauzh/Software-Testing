@@ -41,9 +41,7 @@ Dominated by two problems
 
 | Controllability      | Observability |
 | ----------- | ----------- |
-| How easy it is to provide a program with the needed inputs, in terms of values, operations, and behaviors.
-Input from hardware sensors or distributed software is harder to provide      | How easy it is to observe the behavior of a program in terms of its outputs, effects on the environment and other hardware and software components
-Software that affects hardware devices, databases, or remote files have low observability       |
+| How easy it is to provide a program with the needed inputs, in terms of values, operations, and behaviors. Input from hardware sensors or distributed software is harder to provide | How easy it is to observe the behavior of a program in terms of its outputs, effects on the environment and other hardware and software components Software that affects hardware devices, databases, or remote files have low observability |
 
 
 ```markdown
