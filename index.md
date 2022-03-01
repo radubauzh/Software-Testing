@@ -120,17 +120,3 @@ A test case is a multipart artifact with a definite structure
   - Action performs activity under scrutiny
   - Assertions (postconditions) check result 
 
-
-
-
-
-
-
-
-
-
-
-```markdown
-[Link](url) and ![Image](src)
-```
-
